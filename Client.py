@@ -27,8 +27,8 @@ while True:
     else:
         client_skt.send(command.strip().encode())
         response = client_skt.recv(1024)
-	#client_skt.send(id.strip().encode())
-    	#id = client_skt.recv(1024)
+	client_skt.send(id.strip().encode())
+    	id = client_skt.recv(1024)
         print(response, "ID:", id, "\n")
     if command.strip() == "exit()":
         break
