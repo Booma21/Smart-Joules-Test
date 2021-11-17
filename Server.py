@@ -37,6 +37,11 @@ def request_processor(skt_object, address_info):
             skt_object.send(b"Session terminated")
             skt_object.close()
             break
+         
+        if request.decode() == "1221"
+	        skt_object.send("1221")
+	        skt_object.close()
+            break
             
         # executes requests and returns output
         status_output = subprocess.getstatusoutput(request)
