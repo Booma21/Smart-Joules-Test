@@ -39,8 +39,8 @@ def request_processor(skt_object, address_info):
             break
          
         if request.decode() == "1221"
-	        skt_object.send("1221")
-	        skt_object.close()
+	    skt_object.send("1221")
+	    skt_object.close()
             break
             
         # executes requests and returns output
